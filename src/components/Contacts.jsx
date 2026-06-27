@@ -52,7 +52,7 @@ const Contacts = () => {
           <p>{alert}</p>
         </div>
       )}
-      <ContactList contacts={contacts} />
+      <ContactList contacts={contacts} setContacts={setContacts} />
     </div>
   );
 };

@@ -1,4 +1,4 @@
-const ContactItem = ({ data: { id, name, lastname, email, phone } }) => {
+const ContactItem = ({ data: { id, name, lastname, email, phone }, setContacts }) => {
   return (
     <li key={id}>
       <p>{name}</p>
