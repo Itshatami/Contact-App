@@ -1,7 +1,20 @@
-const ContactList = (props) => {
-  console.log(props);
+import ContactItem from "./ContactItem";
 
-  return <div>ConatctList</div>;
+const ContactList = ({ contacts }) => {
+  return (
+    <div>
+      <h3>list of contacts</h3>
+      {contacts ? (
+        <ul>
+          {contacts.map((contact) => (
+            <ContactItem key={contact.id} data={contact} />
+          ))}
+        </ul>
+      ) : (
+        <p>"no contact"</p>
+      )}
+    </div>
+  );
 };
 
 export default ContactList;
