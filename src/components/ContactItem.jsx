@@ -1,6 +1,6 @@
 const ContactItem = ({ data: { id, name, lastname, email, phone }, deleteHandler }) => {
   return (
-    <li key={id}>
+    <li>
       <p>{name}</p>
       <p>{lastname}</p>
       <p>
